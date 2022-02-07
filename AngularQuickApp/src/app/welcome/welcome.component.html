@@ -1,17 +1,30 @@
-<div class="container bg-light py-5">
-    <h1 class="display-5 fw-bold">Welcome to Quiz App</h1>
-    <p class="col-md-8 fs-4">This quiz will contains total 9 questions. Each Question holds 10 Points</p>
-    <h4>Rules:</h4>
-    <ol>
-        <li>Correct Question gives you 10 points</li>
-        <li>Incorrect question gives to -10 points</li>
-        <li>You will have 10 sec to answer each question</li>
-        <li>Refereshing the page will reset the Quiz</li>
-    </ol>
-    <h1 style="font-family: cursive;text-align:center">All the best</h1>
-    <div class="name col-md-4 my-3">
-        <label for="">Enter your name: </label>
-        <input #name type="text" class="form-control">
+<div class="container-fluid">
+    <div class="card" >
+        <div class="card-body">
+          <h4 class="card-title">Welcome to Quiz App</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h6>Rules :</h6>
+          <ol>
+              <li>Correct Question gives you 10 points</li>
+              <li>Incorrect question gives to -10 points</li>
+              <li>You will have 10 sec to answer each question</li>
+              <li>Refershing the page will reset the Quiz</li>
+          </ol>
+         
+        </div>
+
+        <div class="card-subtitle">
+            <span>All the Best</span>
+        </div>
+
+        <div class="mb-3" style="width: 500px">
+            <label for="exampleFormControlInput1" class="form-label">Enter your name</label>
+            <input #namekey type="name" class="form-control" id="exampleFormControlInput1">
+          </div>
+
+          <button type="button"  routerLink="/question" 
+         (click)="startQuiz()" class="btn btn-primary" style="width: 200px;">Start the Quiz</button>
+        
     </div>
-    <button class="btn btn-primary btn-lg" routerLink="/question" (click)="startQuiz()">Start the Quiz!!</button>
+
 </div>
